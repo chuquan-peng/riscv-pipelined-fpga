@@ -11,9 +11,8 @@ module imem #(
 
       reg [31:0] mem [0:DEPTH-1];
 
-    integer i;
+    // 初值只有一个来源：INIT_FILE。文件必须正好 DEPTH 个字（现在是 256）。
     initial begin
-        for (i = 0; i < DEPTH; i = i + 1) mem[i] = 32'h0000_0000;
         $readmemh(INIT_FILE, mem);
     end
 
