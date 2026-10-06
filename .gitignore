@@ -3,3 +3,5 @@
 *.vcd
 *_sim
 build/
+.Xil/
+usage_statistics_webtalk.*
