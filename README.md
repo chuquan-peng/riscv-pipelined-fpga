@@ -85,6 +85,11 @@ All of these matched. This shows that on real hardware the core leaves reset, ru
 | --- | --- | --- |
 | ![LD3 on](docs/images/pynq_z1_halt_pc_sw00.jpg) | ![LD2 and LD1 on](docs/images/pynq_z1_halt_instr_sw01.jpg) | ![LD3 and LD0 on](docs/images/pynq_z1_reset_instr_sw01.jpg) |
 
+Earlier, the ALU alone was tested on a Basys 3 through switches and LEDs (details in [docs/build-log.md](docs/build-log.md)):
+
+| 3 + 5 = 8, LD3 lit | 3 − 3 = 0, zero flag set, LD15 lit |
+| --- | --- |
+| ![ALU add on Basys 3](docs/images/alu_add_3plus5.jpg) | ![ALU zero flag on Basys 3](docs/images/alu_zero_flag.jpg) |
 ---
 
 ## Build & simulate
